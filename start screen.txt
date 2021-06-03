@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MenuFunctions : MonoBehaviour {
+    
+    //quits game when you press a button with the Quit() function. 
+    public void Quit ()
+    {
+       Debug.Log("QUIT");
+       Application.Quit();
+     }
+
+    //changes scene to the Endless mode scene when you press a button with the Play() function
+    public void Play ()
+    {
+        SceneManager.LoadScene("Endless mode");
+    }
+    
+}
